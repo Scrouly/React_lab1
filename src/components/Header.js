@@ -1,15 +1,14 @@
-import React from 'react'
-// import Button from './Button'
-
+import React from 'react';
+import { Link } from 'react-router-dom';
 class Header extends React.Component {
   render() {
     return (
-    <header className='header'>{this.props.title}
-    {/* <Button text="Нажми на меня"></Button> */}
-    </header>
-    )
+      <header className="header">
+        {' '}
+        <Link to="/logIn"> {this.props.title}</Link>
+      </header>
+    );
   }
 }
 
-
-export default Header
+export default Header;
